@@ -1,0 +1,14 @@
+<div class="center">
+    <h2>Masking Input</h2>
+    <input 
+        type="text"
+        placeholder="Enter masking format"
+        [(ngModel)]="maskTextFormat"
+    >
+    <input
+    type="text" 
+    placeholder="Test Input here"
+    [appInputMask]="maskTextFormat"
+    >
+</div>
+
